@@ -4,3 +4,4 @@ FROM semaphoreui/semaphore:latest
 
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 RUN source $HOME/.cargo/env
+ENV PATH="/home/semaphore/.cargo/bin:${PATH}"
